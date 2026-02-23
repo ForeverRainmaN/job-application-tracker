@@ -1,10 +1,10 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui"
 import Image from "next/image"
 import { useState } from "react"
 
-export default function ImageTabs() {
+function ImageTabs() {
   const [activeTab, setActiveTab] = useState<string>("organize")
 
   return (
@@ -62,3 +62,5 @@ export default function ImageTabs() {
     </section>
   )
 }
+
+export default ImageTabs
